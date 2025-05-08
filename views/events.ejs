@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <%- include('partials/head') %>
-      </head>
+  <%- include('./partials/head') %>
 </head>
 <body>
-<h1>Upcomming Events</h1>
+  <div class="events-container">
+    <h1>Upcoming Events</h1>
+    <div class="events-grid">
+      <% events.forEach(event => { %>
+        <div class="event-card">
+          <img src="<%= event.image %>" alt="<%= event.title %>" onerror="this.src='https://via.placeholder.com/300x200?text=No+Image';">
+          <div class="card-body">
+            <h5><%= event.title %></h5>
+            <p><strong>Date:</strong> <%= event.date %></p>
+            <p><strong>Location:</strong> <%= event.location %></p>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
 </body>
 </html>
