@@ -1,6 +1,40 @@
+
+h1{
+  text-align: center;
+}
+.intro{
+  text-align: center;
+ margin: 0 auto;
+  width: 50%;
+  color: black;
+
+}
+  body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #e6f3e6, #b8e0b8);
+    min-height: 100vh;
+    padding: 20px;
+  }
+ .container {
+  display: flex;
+  flex-direction: row; /* Stacks the flex items vertically */
+  gap: 45px; /* Adds space between the vertical items */
+}
+
+
+.card{
+  width: 300px;
+  height: 295px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px; /* Another way to add vertical space */
+}
+
+
+
 nav{
   background-color: green;
   padding: 3%;
+  color: white;
 }
 .nav-link{
   color: white;
@@ -16,13 +50,11 @@ nav{
 
 .footer {
   position: relative;
-  width: 100%;
   background: green;
-  padding:5px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+   padding: 15px;
+   text-align: center !important;
+   color: white;
+  
 
 }
 
@@ -33,6 +65,7 @@ nav{
   margin: 0 8px; 
   display: inline-block; 
   transition: 0.5s;
+  align-items: center;
 }
 
 .footer a:hover {
@@ -40,7 +73,10 @@ nav{
 }
 
 .social-icon__item {
-  list-style: none;}
+  list-style: none;
+  display: inline;
+  
+}
 
 
 
