@@ -1,3 +1,6 @@
+*{
+  color: black !important;
+}
 /*Heading Aligning*/
 h1{
   text-align: center;
@@ -5,6 +8,7 @@ h1{
 /*Styling welcome message*/
 .intro{
   text-align: center;
+  background: url('https://i.pinimg.com/736x/37/3c/64/373c64e9a291f9dc466ce910d8bc7285.jpg');
  margin: 0 auto;
   width: 50%;
   color: black;
@@ -30,7 +34,7 @@ h1{
 
 /*Arranging the nav bar*/
 nav{
-  background-color: limegreen;
+  
   padding: 3%;
 }
 /*Arranging the links to other pages*/
@@ -42,14 +46,14 @@ nav{
 /*Creating a hover effect for the links*/
 .nav-link:hover {
   color: white;
-  background-color: rgb(96, 231, 96); /* Light background effect */
+  background-color:#50df9c; /* Light background effect */
   transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 /*Arranging footer*/
 .footer {
   position: relative;
-  background: limegreen;
-  padding: 15px;
+  
+  padding: 20px;
   text-align: center !important;
   color: white;
 
@@ -68,7 +72,7 @@ nav{
 .footer a:hover {
   transform: translateY(-10px);
 }
-/*Styling the icons*/
+/**/
 .social-icon__item {
   list-style: none;
   display: inline;
