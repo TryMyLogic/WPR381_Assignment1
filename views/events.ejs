@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--import head, still need header and footer--> 
-  <%- include('./partials/nav') %>
   <%- include('./partials/head') %>
   <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
   <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
+<header><%- include('./partials/nav') %></header>
 <body>
   <div class="container my-5">
     <h1 class="text-center mb-4">Upcoming Events</h1>
@@ -26,8 +25,5 @@
     </div>
   </div>
 </body>
-<footer>
-  <%- include('./partials/footer') %>
-<!--Put footer here-->
-</footer>
+<footer><%- include('./partials/footer') %></footer>
 </html>
