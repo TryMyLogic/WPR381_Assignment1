@@ -1,3 +1,22 @@
-* {
-    color: blue;
+html body {
+  background: url("https://www.transparenttextures.com/patterns/cubes.png"),
+    linear-gradient(135deg, #e6f3e6, #b8e0b8);
+  height: 100vh;
+}
+
+body .btn-primary {
+  background-color: green;
+  border-color: lightgreen;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body .btn-primary:hover {
+  background-color: darkgreen;
+  border-color: green;
+  font-family: "Times New Roman", Times, serif;
+}
+
+#title {
+  color: green;
+  font-family: "Times New Roman", Times, serif;
 }

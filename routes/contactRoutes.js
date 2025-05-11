@@ -9,7 +9,14 @@ router.get("/contact", (req, res) => {
 router.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
   messages.push({ name, email, message });
-  res.redirect("/thank_you");
+  
+ res.render("thank_you", {
+    pageName: "thank_you",
+    title: "Thank You!",
+    name: name,
+    email: email,
+    message: message,
+  });
 });
 
 module.exports = router;
