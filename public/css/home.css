@@ -8,10 +8,12 @@ h1{
 /*Styling welcome message*/
 .intro{
   text-align: center;
-  background: url('https://i.pinimg.com/736x/37/3c/64/373c64e9a291f9dc466ce910d8bc7285.jpg');
- margin: 0 auto;
+  margin: 0 auto;
   width: 50%;
   color: black;
+  font-size: x-large;
+
+
 
 }
 /*Styling body*/
