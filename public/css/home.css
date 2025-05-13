@@ -12,12 +12,11 @@ h1{
   width: 50%;
   color: black;
   font-size: x-large;
-
-
-
 }
+
 /*Styling body*/
   body {
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #e6f3e6, #b8e0b8);
     min-height: 100vh;
@@ -26,12 +25,18 @@ h1{
  
 /*Creating card form*/
 .cardh{
+
   border: 2px solid white;
   border-radius: 8px;
   padding: 15px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   background-color: white;
- 
+  
+  
+}
+
+.row.g-3{
+  justify-content: center;
 }
 
 /*Arranging the nav bar*/
