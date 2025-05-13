@@ -9,74 +9,39 @@
 
 <body> 
   
-  <h1>WELCOME TO THE COMMUNITY PORTAL </h1>
-
-<p class="intro">
+  <h1>WELCOME TO THE COMMUNITY PORTAL </h1> <!-- heading for the portal -->
+   <!-- welcome message -->
+   <p class="intro">
   
       An area for connection, collaboration, and exciting events!
       Whether you are looking to engage with local initiatives, discover upcoming 
       activities, or simply connect with like-minded individuals, you're in the right place.
       Stay tuned for exciting updates and upcoming events, all created to bring
       our community closer together. Let's make a difference—together as one!
-</p> 
-<br>
+   </p> 
+  <br>
   
 
-  <!-- Card Placeholders-->
+  <!-- Card Placeholder using Bootstrap-->
  <div class="container"> 
-   <div id = "eventRow" class="row g-3">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cardh" >
-         <div class="card-body">
-            <h3 class="text-center mb-4">EVENT COMING SOON</h3>
+   <div id = "eventRow" class="row g-3">          <!-- Row for the card with g-3 spacing -->
+      <div class="col-12 col-md-6 col-lg-4">      <!-- Column for event card with responsiveness-->
+        <div class="cardh" >                      <!-- Event Card container -->
+         <div class="card-body">                                      <!-- Contains card details -->
+            <h3 class="text-center mb-4">EVENT COMING SOON</h3>       <!-- Placeholder heading -->
+            <!-- Placeholder for the Event Details -->
              <span class="placeholder col-6 bg-success"></span>
                <p class="card-text placeholder-glow">
                  <span class="placeholder col-7 bg-success"></span>
                   <span class="placeholder col-7 bg-success"></span> 
                </p>
-                <a class="btn btn-success disabled placeholder col-6" aria-disabled="true"></a>
+                <a class="btn btn-success disabled placeholder col-6" aria-disabled="true"></a>    <!--Disabled button  -->
           </div>
-        </div>
-      </div>
-  
-      
-
-  </div>
+       </div>
+     </div>
+   </div>
  </div>
- <h1>WELCOME TO THE COMMUNITY PORTAL </h1>
 
-<p class="intro">
-  
-      An area for connection, collaboration, and exciting events!
-      Whether you are looking to engage with local initiatives, discover upcoming 
-      activities, or simply connect with like-minded individuals, you're in the right place.
-      Stay tuned for exciting updates and upcoming events, all created to bring
-      our community closer together. Let's make a difference—together as one!
-</p> 
-<br>
-  
-
-  <!-- Card Placeholders-->
- <div class="container"> 
-   <div id = "eventRow" class="row g-3">
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="cardh" >
-         <div class="card-body">
-            <h3 class="text-center mb-4">EVENT COMING SOON</h3>
-             <span class="placeholder col-6 bg-success"></span>
-               <p class="card-text placeholder-glow">
-                 <span class="placeholder col-7 bg-success"></span>
-                  <span class="placeholder col-7 bg-success"></span> 
-               </p>
-                <a class="btn btn-success disabled placeholder col-6" aria-disabled="true"></a>
-          </div>
-        </div>
-      </div>
-  
-      
-
-  </div>
- </div>
  <script>
   const events = <%- JSON.stringify(events) %>;
   const today = new Date().toISOString().split("T")[0];
@@ -103,9 +68,8 @@
     eventRow.appendChild(col);
   });
 </script>
- </body>
-<footer><%- include('./partials/footer') %></footer>
-</html>
- </body>
+  
+
+</body>
 <footer><%- include('./partials/footer') %></footer>
 </html>

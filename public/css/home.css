@@ -20,7 +20,7 @@ h1{
     font-family: 'Roboto', sans-serif;
     background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #e6f3e6, #b8e0b8);
     min-height: 100vh;
-    padding: 20px;
+    padding: 20px; /* spacing around content*/
   }
  
 /*Creating card form*/
@@ -31,10 +31,9 @@ h1{
   padding: 15px;
   margin-bottom: 35px;
   background-color: white;
-  
-  
+   
 }
-
+/*Adjusts card to the center*/
 .row.g-3{
   justify-content: center;
 }
@@ -54,35 +53,34 @@ nav{
 .nav-link:hover {
   color: white;
   background-color:#50df9c; /* Light background effect */
-  transition: all 0.3s ease-in-out; /* Smooth transition */
+  transition: all 0.3s ease-in-out; /* Smooth transition for color and backgorund*/
 }
-/*Arranging footer*/
+/*Styling the footer*/
 .footer {
   position: relative;
-  
   padding: 20px;
   text-align: center !important;
   color: white;
 
 }
-/*Arranging icons*/
+/*Arranging icons in the footer*/
 .footer a {
   
   font-size: 30px;
   color: white;
-  margin: 0 8px; 
+  margin: 0 8px; /* adds spacing between icons*/
   display: inline-block; 
-  transition: 0.5s;
+  transition: 0.5s; /*smooth transition for icons*/
   align-items: center;
 }
 /*Hover effect for the icons*/
 .footer a:hover {
-  transform: translateY(-10px);
+  transform: translateY(-10px); /*Moves icons upwards on hover*/
 }
-/**/
+/*Styling the icons*/
 .social-icon__item {
-  list-style: none;
-  display: inline;
+  list-style: none; /*Removes bullet points*/
+  display: inline;  /*Displays icons in line*/
   
 }
 
