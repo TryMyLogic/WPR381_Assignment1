@@ -1,3 +1,99 @@
-* {
-    color: pink;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #e6f3e6, #b8e0b8);
+  min-height: 100vh;
+  padding: 20px;
+  color: #2e7d32;
+}
+
+/* Main container */
+.container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #28a745, #218838);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+}
+
+/* Cards grid */
+.row {
+  gap: 1rem;
+}
+
+/* Card design */
+.card {
+   background: url('https://www.transparenttextures.com/patterns/escheresque.png'), linear-gradient(135deg, #e6f3e6, #b8e0b8);
+  border: 2px solid #28a745;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Card content */
+.card-body {
+ 
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.card-subtitle {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #388e3c;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #2e7d32;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-title {
+    font-size: 1.15rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
 }
