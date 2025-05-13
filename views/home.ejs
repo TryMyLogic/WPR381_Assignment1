@@ -3,11 +3,12 @@
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/home.css">
-  
+  <script type="module" src="/routes/homeRoutes.js"></script>
 </head>
 <header><%- include('./partials/nav') %></header>
 
 <body> 
+  
   <h1>WELCOME TO THE COMMUNITY PORTAL </h1>
 
 <p class="intro">
@@ -23,7 +24,7 @@
 
   <!-- Card Placeholders-->
  <div class="container"> 
-   <div class="row g-3">
+   <div id = "eventRow" class="row g-3">
       <div class="col-12 col-md-6 col-lg-4">
         <div class="cardh" >
          <div class="card-body">
@@ -42,12 +43,32 @@
 
   </div>
  </div>
+ <script>
+  const events = <%- JSON.stringify(events) %>;
+  const today = new Date().toISOString().split("T")[0];
+  const upcomingEvents = events.filter(event => event.date >= today);
 
+  const eventRow = document.getElementById("eventRow");
+  eventRow.innerHTML = "";
 
- 
- 
-
+  upcomingEvents.forEach(event => {
+    const col = document.createElement("div");
+    col.className = "col-12 col-md-6 col-lg-4";
+    col.innerHTML = `
+      <div class="cardh">
+        <div class="card-body">
+          <h3 class="text-center mb-4">${event.title}</h3>
+          <p class="card-text">
+            <strong>Date:</strong> ${event.date}<br>
+            <strong>Location:</strong> ${event.location}
+          </p>
+          <a href="/events" class="btn btn-success">View Details</a>
+        </div>
+      </div>
+    `;
+    eventRow.appendChild(col);
+  });
+</script>
  </body>
-
 <footer><%- include('./partials/footer') %></footer>
 </html>
