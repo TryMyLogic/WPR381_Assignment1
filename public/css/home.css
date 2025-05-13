@@ -1,13 +1,89 @@
-* {
-    color: red;
+*{
+  color: black !important;
+}
+/*Heading Aligning*/
+h1{
+  text-align: center;
+}
+/*Styling welcome message*/
+.intro{
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  color: black;
+  font-size: x-large;
 }
 
-footer{
+/*Styling body*/
+  body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background: url('https://www.transparenttextures.com/patterns/cubes.png'), linear-gradient(135deg, #e6f3e6, #b8e0b8);
+    min-height: 100vh;
+    padding: 20px; /* spacing around content*/
+  }
+ 
+/*Creating card form*/
+.cardh{
 
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 35px;
+  background-color: white;
+   
+}
+/*Adjusts card to the center*/
+.row.g-3{
+  justify-content: center;
 }
 
- ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
+/*Arranging the nav bar*/
+nav{
+  
+  padding: 3%;
+}
+/*Arranging the links to other pages*/
+.nav-link{
+  color: white;
+  display: inline;
+  font-size: larger;
+}
+/*Creating a hover effect for the links*/
+.nav-link:hover {
+  color: white;
+  background-color:#50df9c; /* Light background effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition for color and backgorund*/
+}
+/*Styling the footer*/
+.footer {
+  position: relative;
+  padding: 20px;
+  text-align: center !important;
+  color: white;
+
+}
+/*Arranging icons in the footer*/
+.footer a {
+  
+  font-size: 30px;
+  color: white;
+  margin: 0 8px; /* adds spacing between icons*/
+  display: inline-block; 
+  transition: 0.5s; /*smooth transition for icons*/
+  align-items: center;
+}
+/*Hover effect for the icons*/
+.footer a:hover {
+  transform: translateY(-10px); /*Moves icons upwards on hover*/
+}
+/*Styling the icons*/
+.social-icon__item {
+  list-style: none; /*Removes bullet points*/
+  display: inline;  /*Displays icons in line*/
+  
+}
+
+
+
+

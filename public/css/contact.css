@@ -1,3 +1,33 @@
 * {
-    color: purple;
+  color: black !important;
+}
+
+/* Import Google Font: Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Apply Roboto font and textured background */
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("https://www.transparenttextures.com/patterns/cubes.png"),
+    linear-gradient(135deg, #e6f3e6, #b8e0b8);
+  min-height: 100vh;
+  padding: 20px;
+}
+/*Setting form max width*/
+.contact-form {
+  max-width: 600px !important;
+}
+/*Preventing the form from resizing*/
+textarea.from-control {
+  resize: none;
+}
+/*adding css to make required font red*/
+.required {
+  color: red !important;
+  font-size: 0.9em;
+}
+.contact-button:hover{
+    background-color: darkgreen !important; 
+  color: white !important;
+  border-color: #1e7e34 !important;
 }
