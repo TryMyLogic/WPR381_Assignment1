@@ -8,4 +8,4 @@ router.get("/about", (req, res) => {
 });
 
 module.exports = router;
-console.log("About Data Passed:", aboutData);
+//console.log("About Data Passed:", aboutData);
