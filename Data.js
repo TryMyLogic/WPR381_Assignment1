@@ -26,19 +26,19 @@ const aboutData = [
       title: "Art Exhibition",
       date: "2025-06-15",
       location: "Community Art Gallery, Downtown",
-      image: "/images/art.jpg",
+      image: "./images/art.jpg",
     },
     {
       title: "Tech Talk: AI Innovations",
       date: "2025-07-10",
       location: "Tech Hub, Innovation Center",
-      image: "/images/tech.jpg",
+      image: "./images/tech.jpg",
     },
     {
       title: "Music Festival",
       date: "2025-08-20",
       location: "City Park Amphitheater",
-      image: "/images/music.jpg",
+      image: "./images/music.jpg",
     },
   ];
   
