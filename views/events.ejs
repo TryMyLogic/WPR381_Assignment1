@@ -13,16 +13,12 @@
         <% events.forEach(event => { %>
         <div class="col">
           <div class="card h-100 shadow-sm">
-<<<<<<< HEAD
-            <img src="<%= event.image %>" class="card-img-top" alt="<%= event.title %>">
-=======
             <img
               src="<%= event.image %>"
               class="card-img-top"
               alt="<%= event.title %>"
               onerror="this.src='https://via.placeholder.com/300x200?text=No+Image';"
             />
->>>>>>> b63031719d154a1d6256cbe95b422ee283a36500
             <div class="card-body">
               <h5 class="card-title"><%= event.title %></h5>
               <p class="card-text"><strong>Date:</strong> <%= event.date %></p>
