@@ -8,13 +8,13 @@
 * Zandre Beukes - Front-End Developer
 * Unthatile Mahlangu - Documentation Manager
 
-### --Technologies Used
+### --Technologies Used--
 * EJS
 * Bootstrap
 * Node.js
 * Github
 
-### -- Setup Instructions 
+### --Setup Instructions--
 1. Clone the repository/Download the zip file
 2. Open your prefered code editor. Our team used Visual Studio Code
 3. Open command prompt for the project
