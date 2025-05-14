@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-let messages = [];
+let messages = []; // in-memory array
 
 router.get("/contact", (req, res) => {
   res.render("contact", { pageName: "contact", title: "Contact us" });
@@ -9,8 +9,8 @@ router.get("/contact", (req, res) => {
 router.post("/contact", (req, res) => {
   const { name, email, message } = req.body;
   messages.push({ name, email, message });
-  
- res.render("thank_you", {
+
+  res.render("thank_you", {
     pageName: "thank_you",
     title: "Thank You!",
     name: name,
