@@ -19,7 +19,8 @@
 2. Open your prefered code editor. Our team used Visual Studio Code
 3. Open command prompt for the project
 4. Run npm i, this command installs all the required dependencies according to package.json
-Now you can run the server using node without issues. Feel free to change the host and port. 
+
+* Now you can run the server using node without issues. Feel free to change the host and port. 
 As it stands, the server runs on port 8000 using localhost.
 
 
