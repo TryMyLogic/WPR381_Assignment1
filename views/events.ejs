@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <%- include('./partials/head') %>
-  <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-  <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-</head>
-<header><%- include('./partials/nav') %></header>
-<body>
-  <div class="container my-5">
-    <h1 class="text-center mb-4">Upcoming Events</h1>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-      <% events.forEach(event => { %>
+  <head>
+    <%- include('./partials/head') %>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <header><%- include('./partials/nav') %></header>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Upcoming Events</h1>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <% events.forEach(event => { %>
         <div class="col">
           <div class="card h-100 shadow-sm">
+<<<<<<< HEAD
             <img src="<%= event.image %>" class="card-img-top" alt="<%= event.title %>">
+=======
+            <img
+              src="<%= event.image %>"
+              class="card-img-top"
+              alt="<%= event.title %>"
+              onerror="this.src='https://via.placeholder.com/300x200?text=No+Image';"
+            />
+>>>>>>> b63031719d154a1d6256cbe95b422ee283a36500
             <div class="card-body">
               <h5 class="card-title"><%= event.title %></h5>
               <p class="card-text"><strong>Date:</strong> <%= event.date %></p>
-              <p class="card-text"><strong>Location:</strong> <%= event.location %></p>
+              <p class="card-text">
+                <strong>Location:</strong> <%= event.location %>
+              </p>
             </div>
           </div>
         </div>
-      <% }) %>
+        <% }) %>
+      </div>
     </div>
-  </div>
-</body>
-<footer><%- include('./partials/footer') %></footer>
+  </body>
+  <footer><%- include('./partials/footer') %></footer>
 </html>
